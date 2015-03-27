@@ -1,0 +1,285 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 76%;
+    background: #F0F0F0 ;
+}
+pre {
+    padding: 1em;
+    background-color: #F2F2F2;
+}
+code {
+    font-size: 1.2em;
+    background-color: #F2F2F2;
+}
+
+#content {
+    margin: 3em;
+}
+
+#content p {
+    width: 45em;
+}
+#mainmenu {
+    margin: 1em 0 0 0;
+}
+.panel {
+    clear: both;
+    display: none;
+    border: 3px solid #00adef;
+    padding: 1em;
+    background-color: #FFF;
+    margin: 0;
+}
+.panel.active-tab-body {
+    display: block;
+}
+
+#tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#tabs li {
+    position: relative;
+    float: left;
+}
+#tabs a {
+    float: left;
+    padding: 5px 8px;
+    margin-right: 6px;
+    border: 1px solid #00adef;
+    border-width: 1px 1px 0 1px;
+    text-decoration: none;
+    color: #000;
+}
+#tabs a:hover {
+    background-color: #8dd8f8;
+    color: #FFF;
+}
+#tabs a.active-tab {
+    background-color: #00adef;
+    color: #FFF;
+}
+table { 
+        width: 98%; 
+        border-collapse: collapse; 
+    }
+
+tr:nth-of-type(odd) { 
+        background: rgb(255,255,255); 
+    }
+    th { 
+        background: rgb(215,219,251); 
+        color: black; 
+        font-weight: bold; 
+    }
+    td, th { 
+        padding: 6px; 
+        text-align: left; 
+    }
+td.delete {
+  background: url('../images/charts.gif') no-repeat 4px center;
+  cursor: pointer;
+}
+td.editable
+{
+width: 180px;
+height: 22px;
+}
+/*th {
+   white-space: pre;
+}*/
+
+thead, tfoot {
+    background-color: #DDD;
+}
+
+tr.rowodd {
+    background-color: #FFF;
+}
+
+tr.roweven {
+    background-color: #F2F2F2;
+}
+
+.sortcol {
+    cursor: pointer;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.sortasc {
+    background-color: #DDFFAC;
+    background-image: url(up.gif);
+}
+.sortdesc {
+    background-color: #B9DDFF;
+    background-image: url(down.gif);
+}
+.nosort {
+    cursor: default;
+}
+
+.urg1, .urg2, .urg3, .urg4, .urg5 {
+    padding: 3px;
+    text-align: center;
+    border: 1px solid #333;
+    width: 3em;
+}
+
+.urg1 {
+    background-color: #FFFACD;
+}
+.urg2 {
+    background-color: #FFD700;
+}
+.urg3 {
+    background-color: #FFA500;
+}
+.urg4 {
+    background-color: #E13E00;
+}
+.urg5 {
+    background-color: Red;
+}
+
+th.resize-handle-active {
+    cursor: e-resize;
+}
+
+div.resize-handle {
+    cursor: e-resize;
+    width: 2px;
+    border-right: 1px dashed #1E90FF;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#wrapper {
+        width:450px;
+        margin:0 auto;
+        font-family:Verdana, sans-serif;
+    }
+    legend {
+        color:#0481b1;
+        font-size:16px;
+        padding:0 10px;
+        background:#fff;
+        -moz-border-radius:4px;
+        box-shadow: 0 1px 5px rgba(4, 129, 177, 0.5);
+        padding:5px 10px;
+        text-transform:uppercase;
+        font-family:Helvetica, sans-serif;
+        font-weight:bold;
+    }
+    fieldset {
+        border-radius:4px;
+        background: #fff; 
+        background: -moz-linear-gradient(#fff, #f9fdff);
+        background: -o-linear-gradient(#fff, #f9fdff);
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f9fdff)); /
+        background: -webkit-linear-gradient(#fff, #f9fdff);
+        padding:20px;
+        border-color:rgba(4, 129, 177, 0.4);
+    }
+     
+select {
+    margin: 5px;
+    padding: 0 10px;
+    height: 22px; 
+    width:155px;
+    background: white;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+    input,
+    textarea {
+        color: black;
+        background: #fff;
+        border: 1px solid #CCCCCC;
+        color: black;
+        font-size: 14px;
+        line-height: 1.2em;
+        margin-bottom:15px;
+
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        border-radius:4px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    {
+        padding: 8px 6px;
+        height: 22px;
+        width:180px;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    select:focus
+    {
+        background:#f5fcfe;
+        text-indent: 0;
+                width:180px;
+
+        z-index: 1;
+        color: #373737;
+        -webkit-transition-duration: 400ms;
+        -webkit-transition-property: width, background;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-duration: 400ms;
+        -moz-transition-property: width, background;
+        -moz-transition-timing-function: ease;
+        -o-transition-duration: 400ms;
+        -o-transition-property: width, background;
+        -o-transition-timing-function: ease;
+        
+        border-color:#ccc;
+        box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+        opacity:0.6;
+    }
+    input[type="submit"]{
+        background: #222;
+        border: none;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+        text-transform:uppercase;
+        color: #eee;
+        cursor: pointer;
+        font-size: 15px;
+        margin: 5px 0;
+        padding: 5px 22px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-border-radius:4px;
+        -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    }
+    textarea {
+        padding:3px;
+        width:96%;
+        height:100px;
+    }
+    textarea:focus {
+        background:#ebf8fd;
+        text-indent: 0;
+        z-index: 1;
+        color: #373737;
+        opacity:0.6;
+        box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+        border-color:#ccc;
+    }
+    .small {
+        line-height:14px;
+        font-size:12px;
+        color:#999898;
+        margin-bottom:3px;
+    }
+    
